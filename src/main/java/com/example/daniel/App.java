@@ -1,13 +1,10 @@
 package com.example.daniel;
 
-/**
- * Hello world!
- *
- */
-public class App 
-{
-    public static void main( String[] args )
-    {
-        System.out.println( "Hello World!" );
+public class App {
+    public static void main(String[] args) {
+        javax.swing.SwingUtilities.invokeLater(() -> {
+            ChessBoard board = new ChessBoard();
+            board.setVisible(true);
+        });
     }
 }
